@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCM Tracker - Seguimiento del Universo Cinematográfico de Marvel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎬 UCM Tracker</h1>
+            <p class="subtitle">Sigue tu progreso en el Universo Cinematográfico de Marvel</p>
+        </header>
+
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-number" id="watched-count">0</div>
+                <div class="stat-label">Vistas</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="total-count">0</div>
+                <div class="stat-label">Total</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="progress-percent">0%</div>
+                <div class="stat-label">Progreso</div>
+            </div>
+        </div>
+
+        <div class="progress-bar-container">
+            <div class="progress-bar" id="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="mark-all-btn" class="btn btn-secondary">Marcar todas como vistas</button>
+            <button id="unmark-all-btn" class="btn btn-secondary">Desmarcar todas</button>
+            <button id="filter-btn" class="btn btn-secondary">
+                <span id="filter-text">Mostrar: Todas</span>
+            </button>
+        </div>
+
+        <div class="timeline" id="timeline"></div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
