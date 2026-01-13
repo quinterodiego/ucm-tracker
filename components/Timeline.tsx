@@ -73,14 +73,14 @@ export default function Timeline({
               />
               <label
                 htmlFor={`item-${item.id}`}
-                className={`w-full h-full border-3 rounded-lg flex items-center justify-center transition-all ${
+                className={`w-full h-full border-[3px] rounded-lg flex items-center justify-center transition-all cursor-pointer hover:border-highlight ${
                   isWatched
                     ? "bg-success border-success"
-                    : "border-border-color bg-transparent"
+                    : "border-border-color bg-transparent hover:bg-border-color/20"
                 }`}
               >
                 {isWatched && (
-                  <span className="text-white text-xl font-bold">✓</span>
+                  <span className="text-white text-xl font-bold select-none">✓</span>
                 )}
               </label>
             </div>
